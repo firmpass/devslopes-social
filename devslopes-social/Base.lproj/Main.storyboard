@@ -53,33 +53,22 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-IS-KmA">
-                                <rect key="frame" x="112.5" y="231" width="150" height="150"/>
-                                <color key="backgroundColor" red="0.22974058985710144" green="0.34348571300506592" blue="0.58002620935440063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="3Mv-R1-cNB"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="7ux-Ei-YaZ"/>
-                                    <constraint firstAttribute="width" constant="150" id="GQs-WH-EM4"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="kTG-ZG-Asz"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="f"/>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0yB-IX-zTL">
                                 <rect key="frame" x="46" y="421" width="283" height="120"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Upa-78-Kjh">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Upa-78-Kjh" customClass="FancyField" customModule="devslopes_social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3HR-mx-Tum">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3HR-mx-Tum" customClass="FancyField" customModule="devslopes_social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="45" width="283" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGu-Uq-P3w">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGu-Uq-P3w" customClass="FancyBtn" customModule="devslopes_social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="283" height="30"/>
                                         <color key="backgroundColor" red="0.41176470588235292" green="0.94117647058823528" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Sign In">
@@ -88,7 +77,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wza-aa-T95">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wza-aa-T95" customClass="FancyView" customModule="devslopes_social" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-logo" translatesAutoresizingMaskIntoConstraints="NO" id="zKZ-Cp-Rs7">
@@ -102,6 +91,17 @@
                                     <constraint firstItem="zKZ-Cp-Rs7" firstAttribute="centerX" secondItem="wza-aa-T95" secondAttribute="centerX" id="smy-f1-tov"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-IS-KmA" customClass="RoundBtn" customModule="devslopes_social" customModuleProvider="target">
+                                <rect key="frame" x="112" y="230" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.22974058985710144" green="0.34348571300506592" blue="0.58002620935440063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3Mv-R1-cNB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="7ux-Ei-YaZ"/>
+                                    <constraint firstAttribute="width" constant="150" id="GQs-WH-EM4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="kTG-ZG-Asz"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="f"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -119,11 +119,11 @@
                             <constraint firstItem="wza-aa-T95" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dLx-HY-D6Q"/>
                             <constraint firstAttribute="trailing" secondItem="aNe-sT-Okz" secondAttribute="trailing" id="grj-GM-PaU"/>
                             <constraint firstAttribute="trailing" secondItem="wza-aa-T95" secondAttribute="trailing" id="h5y-Qd-8de"/>
-                            <constraint firstItem="0yB-IX-zTL" firstAttribute="top" secondItem="eUa-IS-KmA" secondAttribute="bottom" constant="40" id="huZ-cZ-Cpf"/>
+                            <constraint firstItem="0yB-IX-zTL" firstAttribute="top" secondItem="eUa-IS-KmA" secondAttribute="bottom" constant="41" id="huZ-cZ-Cpf"/>
                             <constraint firstItem="vSF-C9-vAa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pih-Nu-jmL"/>
                             <constraint firstItem="aNe-sT-Okz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pqJ-b9-1nB"/>
                             <constraint firstItem="vSF-C9-vAa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rEH-Hw-ykt"/>
-                            <constraint firstItem="eUa-IS-KmA" firstAttribute="top" secondItem="vSF-C9-vAa" secondAttribute="bottom" constant="40" id="tV9-Xd-KpK"/>
+                            <constraint firstItem="eUa-IS-KmA" firstAttribute="top" secondItem="vSF-C9-vAa" secondAttribute="bottom" constant="39" id="tV9-Xd-KpK"/>
                         </constraints>
                     </view>
                 </viewController>
