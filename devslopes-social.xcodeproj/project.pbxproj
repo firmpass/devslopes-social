@@ -63,6 +63,7 @@
 		E29064361EDD1D5F005898AB /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		E29064381EDD205C005898AB /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		E290643A1EDD22AE005898AB /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		E290643C1EDDC29A005898AB /* devslopes-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "devslopes-social.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 		E29063FD1EDA174F005898AB /* devslopes-social */ = {
 			isa = PBXGroup;
 			children = (
+				E290643C1EDDC29A005898AB /* devslopes-social.entitlements */,
 				E29064331EDD1AAD005898AB /* Util */,
 				E290642E1EDA1B57005898AB /* Model */,
 				E29064301EDA1B64005898AB /* Controller */,
@@ -272,6 +274,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = Z77Y67U5T8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					E290640E1EDA174F005898AB = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -549,6 +556,7 @@
 			baseConfigurationReference = 4604BDC7BF6C5A4DDC4EA617 /* Pods-devslopes-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "devslopes-social/devslopes-social.entitlements";
 				DEVELOPMENT_TEAM = Z77Y67U5T8;
 				INFOPLIST_FILE = "devslopes-social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -563,6 +571,7 @@
 			baseConfigurationReference = 097C430798738499CBA8C828 /* Pods-devslopes-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "devslopes-social/devslopes-social.entitlements";
 				DEVELOPMENT_TEAM = Z77Y67U5T8;
 				INFOPLIST_FILE = "devslopes-social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
